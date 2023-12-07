@@ -4,7 +4,8 @@
   "description": "The website is for displaying my portfolio.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode=production",
+    "dev": "npx webpack serve --mode=development"
   },
   "author": "Steffen Johannknecht",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "@babel/preset-env": "^7.23.3",
     "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
+    "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",
     "webpack": "^5.89.0",

@@ -6,7 +6,7 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
-        assetModuleFilename: 'assets/img/[name].[ext]',
+        assetModuleFilename: 'assets/[name].[ext]',
         clean: true,
     },
     plugins: [
@@ -28,6 +28,14 @@ module.exports = {
                         ]
                     }
                 }
+            },
+            {
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: 'html-loader'
+                    }
+                ]
             },
             {
                 test: /\.css$/i,
