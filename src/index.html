@@ -6,22 +6,167 @@
     <title>sjohannknecht</title>
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Projects</li>
-            <li>About</li>
-            <li>Contact</li>
+<header class="header--primary">
+    <nav class="nav">
+        <ul class="nav__menu nav__menu--primary">
+            <li class="nav__item"><button class="nav__button">Home</button></li>
+            <li class="nav__item"><button class="nav__button">Skills</button></li>
+            <li class="nav__item"><button class="nav__button">Projekte</button></li>
+            <li class="nav__item"><button class="nav__button">Kontakt</button></li>
         </ul>
     </nav>
 </header>
 <main>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section>
+        <div class="hero content-container">
+            <div class="hero__heading">
+                <h1>Hello, World!</h1>
+                <img src="assets/img/waving_hand.svg" alt="Waving Hand Emoji" class="hero__img-hand">
+            </div>
+            <svg class="hero__img-robot" id="robot-emoji" aria-labelledby="robot-title robot-description" role="img" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                <title id="robot-title">Robot greeter</title>
+                <desc id="robot-description">An image of a robot head. It's part of the hero section of the homepage to greet users.</desc>
+                <g id="color">
+                    <path fill="red" d="M34,16.1123v-2.5109c0-1.3807,1.1193-2.5,2.5-2.5l0,0c1.3807,0,2.5,1.1193,2.5,2.5v2.5"/>
+                    <path fill="#D0CFCE" d="M13.5,41.1014L13.5,41.1014c-1.3807,0-2.5-1.1193-2.5-2.5v-8c0-1.3807,1.1193-2.5,2.5-2.5l0,0 c1.3807,0,2.5,1.1193,2.5,2.5v8C16,39.9821,14.8807,41.1014,13.5,41.1014z"/>
+                    <path fill="#D0CFCE" d="M58.5,41.1014L58.5,41.1014c1.3807,0,2.5-1.1193,2.5-2.5v-8c0-1.3807-1.1193-2.5-2.5-2.5l0,0 c-1.3807,0-2.5,1.1193-2.5,2.5v8C56,39.9821,57.1193,41.1014,58.5,41.1014z"/>
+                    <path fill="#D0CFCE" d="M47.4505,56.1123h-22.901c-4.7022,0-8.5495-3.8473-8.5495-8.5495v-22.901 c0-4.7022,3.8473-8.5495,8.5495-8.5495h22.901c4.7022,0,8.5495,3.8473,8.5495,8.5495v22.901 C56,52.2649,52.1527,56.1123,47.4505,56.1123z"/>
+                    <path fill="#9B9B9A" d="M35.4977,56.1115h13.2865c3.9687,0,7.2158-3.8473,7.2158-8.5495V24.661 c0-4.7022-3.2471-8.5495-7.2158-8.5495h-2.3526"/>
+                    <ellipse cx="44.8346" cy="29.0027" rx="2.8338" ry="2.8338" fill="#FFFFFF"/>
+                    <ellipse cx="27.3342" cy="29.0022" rx="2.8338" ry="2.8338" fill="#FFFFFF"/>
+                    <path fill="#FFFFFF" d="M44.5,47.5005h-17c-2.2,0-4-1.8-4-4l0,0c0-2.2,1.8-4,4-4h17c2.2,0,4,1.8,4,4l0,0 C48.5,45.7005,46.7,47.5005,44.5,47.5005z"/>
+                </g>
+                <g id="hair"/>
+                <g id="skin"/>
+                <g id="skin-shadow"/>
+                <g id="line">
+                    <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="2" d="M34,16.0109V13.5c0-1.3807,1.1193-2.5,2.5-2.5l0,0c1.3807,0,2.5,1.1193,2.5,2.5V16"/>
+                    <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="2" d="M47.4505,56h-22.901C19.8473,56,16,52.1527,16,47.4505v-22.901C16,19.8473,19.8473,16,24.5495,16h22.901 C52.1527,16,56,19.8473,56,24.5495v22.901C56,52.1527,52.1527,56,47.4505,56z"/>
+                    <ellipse cx="44.8346" cy="29.0022" rx="2.8338" ry="2.8338" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="2"/>
+                    <ellipse cx="27.3342" cy="29.0017" rx="2.8338" ry="2.8338" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="2"/>
+                    <path fill="none" stroke="#000000" stroke-miterlimit="2" stroke-width="2" d="M44.5,47.5h-17c-2.2,0-4-1.8-4-4l0,0 c0-2.2,1.8-4,4-4h17c2.2,0,4,1.8,4,4l0,0C48.5,45.7,46.7,47.5,44.5,47.5z"/>
+                    <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="2" d="M13.5,41L13.5,41c-1.3807,0-2.5-1.1193-2.5-2.5v-8c0-1.3807,1.1193-2.5,2.5-2.5l0,0c1.3807,0,2.5,1.1193,2.5,2.5v8 C16,39.8807,14.8807,41,13.5,41z"/>
+                    <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="2" d="M58.5,41L58.5,41c1.3807,0,2.5-1.1193,2.5-2.5v-8c0-1.3807-1.1193-2.5-2.5-2.5l0,0c-1.3807,0-2.5,1.1193-2.5,2.5v8 C56,39.8807,57.1193,41,58.5,41z"/>
+                    <line x1="28" x2="28" y1="40" y2="47" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="2"/>
+                    <line x1="33" x2="33" y1="40" y2="47" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="2"/>
+                    <line x1="38" x2="38" y1="40" y2="47" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="2"/>
+                    <line x1="43" x2="43" y1="40" y2="47" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="2"/>
+                </g>
+            </svg>
+            <div class="hero__text">
+                <h2>Über mich</h2>
+                <p>Hi, ich bin Steffen und habe kürzlich meinen <strong>Bachelor in Naturwissenschaftlicher Informatik</strong> an der Universität Bielefeld abgeschlossen.</p>
+                <p>Während des Studiums habe ich für 1 Jahr und 8 Monate als wissenschaftliche Hilfskraft in der AG Multimodal Behavior Processing am CITEC unter anderem als Frontend-Web-Entwickler mit React gearbeitet. </p>
+                <p>Ich bewerbe mich derzeit auf Stellen als <strong>Web-Entwickler</strong>. Diese Website soll Interessierten mein <strong>Portfolio</strong> vorstellen.</p>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <div class="skew--bg skew--positive">
+        </div>
+        <div class="content-container">
+            <h2>Meine Skills</h2>
+            <h3>Sprachen/Bibliotheken:</h3>
+            <ul class="skills__list">
+                <li class="skills__item">
+                    <figure><img src="assets/img/icons/html5_icon.svg" alt="HTML5 Icon" class="icon">
+                        <figcaption>HTML</figcaption>
+                    </figure>
+                </li>
+                <li class="skills__item">
+                    <figure><img src="assets/img/icons/css3_icon.svg" alt="CSS3 Icon" class="icon">
+                        <figcaption>CSS</figcaption>
+                    </figure>
+                </li>
+                <li class="skills__item">
+                    <figure><img src="assets/img/icons/js_icon.svg" alt="JavaScript Icon" class="icon">
+                        <figcaption>JavaScript</figcaption>
+                    </figure>
+                </li>
+                <li class="skills__item">
+                    <figure><img src="assets/img/icons/react_icon.svg" alt="React Icon" class="icon">
+                        <figcaption>React</figcaption>
+                    </figure>
+                </li>
+                <li class="skills__item">
+                    <figure><img src="assets/img/icons/jest_icon.png" alt="Jest Icon" class="icon">
+                        <figcaption>Jest</figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <h3>Tools:</h3>
+            <ul class="skills__list">
+                <li class="skills__item">
+                    <figure><img src="assets/img/icons/webpack_icon.svg" alt="webpack Icon" class="icon">
+                        <figcaption>webpack</figcaption>
+                    </figure>
+                </li>
+                <li class="skills__item">
+                    <figure><img src="assets/img/icons/github_actions_icon.png" alt="GitHub Icon" class="icon">
+                        <figcaption>GitHub Actions</figcaption>
+                    </figure>
+                </li>
+                <li class="skills__item">
+                    <figure><img src="assets/img/icons/docker_icon.svg" alt="Docker Icon" class="icon">
+                        <figcaption>Docker</figcaption>
+                    </figure>
+                </li>
+                <li class="skills__item">
+                    <figure><img src="assets/img/icons/nginx_icon.svg" alt="nginx Icon" class="icon">
+                        <figcaption>nginx</figcaption>
+                    </figure>
+                </li>
+                <li class="skills__item">
+                    <figure><img src="assets/img/icons/firebase_icon.svg" alt="" class="icon">
+                        <figcaption>Firebase</figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <h3>Was ich lernen will:</h3>
+            <p>TypeScript, Tailwind CSS, Svelte, Web Components, Express</p>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="content-container">
+            <h2>Projekte</h2>
+            <div class="card">
+                <img class="card__img" src="./assets/img/battleship-example.png">
+                <div class="card__text">
+                    <h3>Beispielprojekt 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa debitis esse hic, inventore ipsum itaque nesciunt numquam quaerat quasi reiciendis repellat sint, voluptas? Commodi consectetur maxime nobis quaerat vero.</p>
+                </div></div>
+            <div class="card card--reverse">
+                <img class="card__img" src="./assets/img/battleship-example.png">
+                <div class="card__text">
+                    <h3>Beispielprojekt 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad asperiores atque deserunt doloremque doloribus dolorum ipsa non numquam, quaerat!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img" src="./assets/img/battleship-example.png">
+                <div class="card__img">
+                    <h3>Beispielprojekt 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eos nulla quos repellendus sit vero!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="skew--bg skew--negative">
+        </div>
+        <div class="content-container">
+            <h2>Kontakt</h2>
+            <ul class="contact__list">
+                <li><a href="mailto:sjohannknecht@protonmail.com" class="contact__anchor"><img class="icon" src="assets/img/icons/email_icon.svg" alt="Email Icon">sjohannknecht@protonmail.com</a></li>
+                <li><a href="https://github.com" class="contact__anchor"><img class="icon" src="assets/img/icons/github_icon.svg" alt="GitHub Icon">GitHub</a></li>
+                <li><a href="https://linkedin.com" class="contact__anchor"><img class="icon" src="assets/img/icons/linkedin_icon.svg" alt="LinkedIn Icon">LinkedIn</a></li>
+            </ul>
+        </div>
+    </section>
 </main>
-<footer></footer>
-
+<footer class="footer">
+    <a href="https://google.com">Datenschutz</a>
+    <a href="">Privatsphäre</a>
+</footer>
 </body>
 </html>
