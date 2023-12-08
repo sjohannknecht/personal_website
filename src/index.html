@@ -10,16 +10,16 @@
 <header class="header--primary">
     <nav class="nav">
         <ul class="nav__menu nav__menu--primary">
-            <li class="nav__item"><button class="nav__button">Home</button></li>
-            <li class="nav__item"><button class="nav__button">Skills</button></li>
-            <li class="nav__item"><button class="nav__button">Projekte</button></li>
-            <li class="nav__item"><button class="nav__button">Kontakt</button></li>
+            <li class="nav__item"><a class="nav__button" href="#hero-section">Home</a></li>
+            <li class="nav__item"><a class="nav__button" href="#skills-section">Skills</a></li>
+            <li class="nav__item"><a class="nav__button" href="#projects-section">Projekte</a></li>
+            <li class="nav__item"><a class="nav__button" href="#contact-section">Kontakt</a></li>
         </ul>
     </nav>
 </header>
 <main>
-    <section>
-        <div class="hero content-container">
+    <section id="hero-section" class="hero">
+        <div class="hero__content content-container">
             <div class="hero__heading">
                 <h1>Hello, World!</h1>
                 <img src="assets/img/waving_hand.svg" alt="Waving Hand Emoji" class="hero__img-hand">
@@ -62,7 +62,7 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section id="skills-section" class="skills">
         <div class="skew--bg skew--positive">
         </div>
         <div class="content-container">
@@ -127,7 +127,7 @@
             <p>TypeScript, Tailwind CSS, Svelte, Web Components, Express</p>
         </div>
     </section>
-    <section class="projects">
+    <section id="projects-section" class="projects">
         <div class="content-container">
             <h2>Projekte</h2>
             <div class="card">
@@ -145,14 +145,14 @@
             </div>
             <div class="card">
                 <img class="card__img" src="./assets/img/battleship-example.png">
-                <div class="card__img">
+                <div class="card__text">
                     <h3>Beispielprojekt 1</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eos nulla quos repellendus sit vero!</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section id="contact-section" class="contact">
         <div class="skew--bg skew--negative">
         </div>
         <div class="content-container">

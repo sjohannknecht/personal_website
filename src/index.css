@@ -21,7 +21,6 @@
 }
 
 body {
-    padding-top: 50px;
     min-height: 100svh;
     font-family: JetBrainsMonoRegular, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -69,7 +68,6 @@ header {
     background-color: var(--clr-primary);
 }
 
-
 .nav {
     max-width: var(--max-width);
     margin: auto;
@@ -85,18 +83,20 @@ header {
 }
 
 .nav__button {
+    display: inline-block;
     padding: 15px;
-    outline: none;
-    border: none;
     border-bottom: 5px solid transparent;
-    cursor: pointer;
-    background: none;
-    font: inherit;
+    text-decoration: none;
     font-size: 1.5rem;
+    color: black;
 }
 
 .nav__button:hover, :focus-visible {
     border-bottom: 5px solid var(--clr-accent);
+}
+
+section {
+    scroll-margin-top: 4em;
 }
 
 .content-container {
@@ -131,6 +131,10 @@ header {
 
 /* |||||||||||| Hero Section |||||||||||| */
 
+.hero {
+    padding-top: 50px;
+}
+
 .hero__heading {
     display: flex;
     align-items: center;
@@ -164,7 +168,7 @@ header {
 }
 
 @media (min-width: 600px) {
-    .hero {
+    .hero__content {
         display: grid;
         grid-template-columns: 1fr 40%;
         align-items: center;
@@ -284,7 +288,6 @@ header {
 
 .contact__list li {
     text-align: left;
-
 }
 
 .contact__anchor {
