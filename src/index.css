@@ -178,6 +178,10 @@ section {
     height: 40px;
 }
 
+.border--black {
+    border: 1px solid black;
+}
+
 .footer {
     text-align: center;
     padding: 20px;
