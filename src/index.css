@@ -1,4 +1,4 @@
-/* |||||||||||| General styles |||||||||||| */
+/* |||||||||||||||||||||||||||||||||||| General styles |||||||||||||||||||||||||||||||||||| */
 
 *,
 *::before,
@@ -56,7 +56,7 @@ a {
     color: var(--clr-accent)
 }
 
-/* |||||||||||| Sitewide |||||||||||| */
+/* |||||||||||||||||||||||||||||||||||| Sitewide |||||||||||||||||||||||||||||||||||| */
 
 header {
     position: fixed;
@@ -187,7 +187,7 @@ section {
     padding: 20px;
 }
 
-/* |||||||||||| Hero Section |||||||||||| */
+/* |||||||||||||||||||||||||||||||||||| Hero Section |||||||||||||||||||||||||||||||||||| */
 
 .hero {
     padding-top: 65px;
@@ -272,7 +272,7 @@ section {
 }
 
 
-/* |||||||||||| Skills Section |||||||||||| */
+/* |||||||||||||||||||||||||||||||||||| Skills Section |||||||||||||||||||||||||||||||||||| */
 
 .skills {
     position: relative;
@@ -294,7 +294,7 @@ section {
 }
 
 
-/* |||||||||||| Projects Section |||||||||||| */
+/* |||||||||||||||||||||||||||||||||||| Projects Section |||||||||||||||||||||||||||||||||||| */
 
 .card {
     text-align: center;
@@ -346,9 +346,21 @@ section {
     }
 }
 
+.paragraph__anchor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 0.3rem;
+}
 
-/* |||||||||||| Contact Section |||||||||||| */
+@container (min-width: 800px) {
+    .paragraph__anchor {
+        justify-content: start;
+    }
+}
 
+/* |||||||||||||||||||||||||||||||||||| Contact Section |||||||||||||||||||||||||||||||||||| */
 
 .contact {
     position: relative;
