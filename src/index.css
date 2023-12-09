@@ -13,6 +13,11 @@
     src: url("./assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: "JetBrainsMonoSemiBold";
+    src: url("./assets/fonts/JetBrainsMono-SemiBold.woff2") format("woff2");
+}
+
 :root {
     --max-width: 1200px;
     --clr-primary: hsl(83.7,100%,50%);
@@ -56,6 +61,9 @@ a {
     color: var(--clr-accent)
 }
 
+strong {
+    font-family: JetBrainsMonoSemiBold system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+}
 /* |||||||||||||||||||||||||||||||||||| Sitewide |||||||||||||||||||||||||||||||||||| */
 
 header {
