@@ -48,7 +48,7 @@ h3 {
 }
 
 p {
-    padding: 0.2rem;
+    padding: 0.3rem;
 }
 
 a {
@@ -97,6 +97,7 @@ header {
 
 section {
     scroll-margin-top: 4em;
+    padding-bottom: 40px;
 }
 
 .content-container {
@@ -129,10 +130,15 @@ section {
     height: 40px;
 }
 
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
 /* |||||||||||| Hero Section |||||||||||| */
 
 .hero {
-    padding-top: 50px;
+    padding-top: 65px;
 }
 
 .hero__heading {
@@ -143,15 +149,16 @@ section {
     justify-content: center;
 }
 
+.hero__subheading {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
 .hero__img-robot {
     display: none;
     width: 15rem;
     align-self: end;
     transform: translate(0, -20px);
-}
-
-.hero__text {
-    transform: translate(0, -40px);
 }
 
 .hero__img-hand {
@@ -160,11 +167,6 @@ section {
 
 #robot-emoji:hover ellipse {
     fill: var(--clr-accent);
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
 }
 
 @media (min-width: 600px) {
@@ -178,9 +180,7 @@ section {
 
     .hero__heading {
         display: flex;
-        align-items: center;
         justify-self: right;
-        padding: 60px 30px;
         background-image: url("./assets/img/speech-bubble.png");
         background-size: 100% 100%;
         transform: translate(50px, 50px);
@@ -196,7 +196,6 @@ section {
     .hero__text {
         grid-area: 2 / 1;
         justify-self: right;
-        transform: none;
     }
 }
 
@@ -293,9 +292,8 @@ section {
 .contact__anchor {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 5px;
-    padding: 10px 0;
+    padding: 10px 0.3rem;
 }
 
 @container (min-width: 600px) {
