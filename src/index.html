@@ -10,10 +10,18 @@
 <header class="header--primary">
     <nav class="nav">
         <ul class="nav__menu nav__menu--primary">
-            <li class="nav__item"><a class="nav__button" href="#home-section">Home</a></li>
-            <li class="nav__item"><a class="nav__button" href="#skills-section">Skills</a></li>
-            <li class="nav__item"><a class="nav__button" href="#projects-section">Projekte</a></li>
-            <li class="nav__item"><a class="nav__button" href="#contact-section">Kontakt</a></li>
+            <li class="nav__item--responsive"><a class="nav__anchor" href="#home-section">Home</a></li>
+            <li class="nav__item--responsive"><a class="nav__anchor" href="#skills-section">Skills</a></li>
+            <li class="nav__item--responsive"><a class="nav__anchor" href="#projects-section">Projekte</a></li>
+            <li class="nav__item--responsive"><a class="nav__anchor" href="#contact-section">Kontakt</a></li>
+            <li class="nav__item--responsive"><button class="nav__button--mobile"><img src="assets/img/icons/hamburger_icon.svg" alt="Dropdown Menu Icon" class="nav__icon--dropdown"></button></li>
+        </ul>
+    </nav>
+    <nav class="nav nav--dropdown hidden">
+        <ul class="nav__menu nav__menu--dropdown">
+            <li class="nav__item--dropdown"><a class="nav__anchor nav__anchor--dropdown" href="#skills-section">Skills</a></li>
+            <li class="nav__item--dropdown"><a class="nav__anchor nav__anchor--dropdown" href="#projects-section">Projekte</a></li>
+            <li class="nav__item--dropdown"><a class="nav__anchor nav__anchor--dropdown" href="#contact-section">Kontakt</a></li>
         </ul>
     </nav>
 </header>
