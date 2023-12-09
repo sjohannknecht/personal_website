@@ -7,8 +7,18 @@ import emailIcon from "./assets/img/icons/email_icon.svg"
 const dropdown = document.querySelector(".nav--dropdown");
 const contactList = document.querySelector(".contact__list");
 
+// event listener for the dropdown menu for mobile devices (bound to document, so that the dropdown closes when clicking outside)
 document.addEventListener("click", toggleDropdown);
 
+function toggleDropdown(e) {
+    if (e.target.classList.contains("nav__button--mobile") || e.target.classList.contains("nav__icon--dropdown")) {
+        dropdown.classList.toggle("hidden");
+    } else {
+        dropdown.classList.add("hidden");
+    }
+}
+
+// dynamically create the contact list to mitigate the effect of email crawlers
 (function renderContactList() {
     const entries = [
         {
@@ -38,14 +48,6 @@ document.addEventListener("click", toggleDropdown);
     })
     contactList.replaceChildren(...nodes);
 })();
-
-function toggleDropdown(e) {
-    if (e.target.classList.contains("nav__button--mobile") || e.target.classList.contains("nav__icon--dropdown")) {
-        dropdown.classList.toggle("hidden");
-    } else {
-        dropdown.classList.add("hidden");
-    }
-}
 
 function createContactListItem(data) {
     const li = document.createElement("li");
