@@ -137,7 +137,7 @@ header {
 
 .nav__menu--dropdown {
     position: absolute;
-    display: flow;
+    display: block;
     right: 0;
     background-color: var(--clr-primary);
     list-style: none;
@@ -247,7 +247,7 @@ section {
     }
 
     .hero__img-robot {
-        display: flow;
+        display: block;
         grid-area: 2 / 2;
         place-self: center;
         width: 20rem;
