@@ -41,8 +41,7 @@ To build the website for production execute:
 ## Code
 It's mostly HTML and CSS. There's some JavaScript for the mobile dropdown menu and to generate contact details for obfuscation against email crawlers.
 
-All the content is located in `index.html` and the styling is located in `index.css`. `data-privacy.html` is also styled by `index.css`.
-
+All the content is located in `index.html` and the styling is located in `index.css`. `data-privacy.html` gets the general styles from there, too.
 ## Tools
 
 Webpack 5 is used for processing the source code and the assets (See `webpack.config.js`). It uses Babel for transpiling the JS. The output directory is `dist`. HTMLWebpackPlugin generates the output HTML files based on the HTML templates in `src` and injects the corresponding bundled JS files. Images and fonts are processed with Webpack 5 Asset Modules. CSS is processed with css-loader and style-loader plugins.

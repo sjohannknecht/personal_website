@@ -1,4 +1,5 @@
 import "./index.css";
+import "./data-privacy.css"
 
 //obfuscate address in code
 (function renderContact() {
