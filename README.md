@@ -1,6 +1,6 @@
 # Personal website project
 
-This is my personal Website project which I use to display my portfolio. It's written in plain HTML, CSS and Javascript. The website is responsive and works for desktop and mobile.
+This is my personal Website project which I use to display my portfolio. It's written in plain HTML, CSS and Javascript.
 
 ![Screenshot of the battleship website showcasing the gameplay](website-example.png)
 
@@ -48,7 +48,7 @@ Webpack 5 is used for processing the source code and the assets (See `webpack.co
 
 ## Support
 
-If you are having issues, please let me know via the contacts on my website.
+If you are having issues, please let me know via the contacts on [my website](https://sjohannknecht.de).
 
 ## License
 
