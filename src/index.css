@@ -162,6 +162,17 @@ section {
     container-type: inline-size;
 }
 
+.text-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.text-container h1 {
+    padding-top: 100px;
+    text-decoration: underline var(--clr-primary);
+    text-decoration-thickness: 5px;
+}
+
 .skew--bg {
     position: absolute;
     top: 0;

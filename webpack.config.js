@@ -2,17 +2,25 @@ const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        index: "./src/index.js",
+        dataPrivacy: "./src/data-privacy.js",
+    },
     output: {
-        filename: 'main.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        assetModuleFilename: 'assets/[name].[ext]',
         clean: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Battleship',
-            template: "./src/index.html"
+            filename: "index.html",
+            template: "./src/index.html",
+            chunks: ["index"],
+        }),
+        new HtmlWebpackPlugin({
+            filename: "data-privacy.html",
+            template: "./src/data-privacy.html",
+            chunks: ["dataPrivacy"],
         }),
     ],
     module: {
