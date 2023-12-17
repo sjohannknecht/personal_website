@@ -3,23 +3,24 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: {
-        index: "./src/index.js",
-        dataPrivacy: "./src/data-privacy.js",
+        index: path.resolve(__dirname, "src", "index.js"),
+        dataPrivacy: path.resolve(__dirname, "src", "data-privacy.js"),
     },
     output: {
         filename: '[name].bundle.js',
+        assetModuleFilename: path.join("assets", "[hash][ext]"),
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
             filename: "index.html",
-            template: "./src/index.html",
+            template: path.resolve(__dirname, "src", "index.html"),
             chunks: ["index"],
         }),
         new HtmlWebpackPlugin({
             filename: "data-privacy.html",
-            template: "./src/data-privacy.html",
+            template: path.resolve(__dirname, "src", "data-privacy.html"),
             chunks: ["dataPrivacy"],
         }),
     ],
