@@ -287,6 +287,14 @@ section {
   }
 }
 
+@media (max-width: 600px) {
+  .hero__heading img {
+    animation-name: hand-rotation;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+  }
+}
+
 .hero__heading:hover img {
   animation-name: hand-rotation;
   animation-duration: 0.3s;
