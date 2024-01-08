@@ -256,6 +256,10 @@ section {
         grid-area: 2 / 1;
         justify-self: right;
     }
+
+    .hero__text--italic {
+        font-style: italic;
+    }
 }
 
 @keyframes hand-rotation {
