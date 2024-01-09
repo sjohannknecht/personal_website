@@ -9,7 +9,11 @@
   text-decoration-thickness: 5px;
 }
 
-.server__list {
+.text-container__link {
+  word-break: break-all;
+}
+
+.server-list {
   list-style-position: inside;
   padding: 10px;
 }
